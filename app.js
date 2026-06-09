@@ -19,11 +19,11 @@ if (navToggle && nav) {
 
 function parseEntries(markdown) {
   return markdown
-    .split(/\n---\n/g)
+    .split(/\r?\n---\r?\n/g)
     .map((chunk) => chunk.trim())
     .filter(Boolean)
     .map((chunk) => {
-      const lines = chunk.split('\n');
+      const lines = chunk.split(/\r?\n/);
       const data = {};
       let i = 0;
       for (; i < lines.length; i += 1) {
