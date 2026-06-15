@@ -1,0 +1,10 @@
+# Exclude input folder from version control (used only for local content development)
+input/
+
+# Exclude common OS and editor files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
