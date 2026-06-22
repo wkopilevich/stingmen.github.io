@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stingmen - Die ultimative Band für Fans von Sting und The Police." />
-  <title>Stingmen | Tribute to Sting & The Police</title>
+  <meta name="description" content="Stingmen Website im Aufbau - bald verfügbar." />
+  <title>Stingmen | Website im Aufbau</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -14,170 +14,40 @@
   <div class="background-glow" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
-    <a class="logo" href="#home" aria-label="Stingmen Startseite">Stingmen</a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menü</button>
-    <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#tour">Tour</a>
-      <a href="#media">Media</a>
-      <a href="#bio">Bio</a>
-      <a href="#lineup">Lineup</a>
-      <a href="#tech">Tech</a>
+    <a class="logo" href="#status" aria-label="Stingmen Startseite">Stingmen</a>
+    <nav id="main-nav" class="main-nav open" aria-label="Hauptnavigation">
+      <a href="#status">Status</a>
       <a href="#impressum">Impressum</a>
-      <a href="#datenschutz">Datenschutz</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero section reveal">
+    <section id="status" class="hero section reveal visible">
       <img src="Stingmen_Banner.jpg" alt="Stingmen Band Banner" class="hero-banner" />
       <div class="hero-text">
         <p class="eyebrow">Tribute Live Experience</p>
-        <h1>Stingmen</h1>
+        <h1>Website im Aufbau</h1>
         <p>
-          Die ultimative Band für Fans von Sting und The Police. Wir feiern die Melodien,
-          die Generationen geprägt haben - kraftvoll, präzise und mit echter Leidenschaft.
+          Unsere neue Stingmen-Website wird aktuell final vorbereitet.
+          Inhalte, Termine und Medien werden zurzeit abgestimmt und in Kuerze veroeffentlicht.
+        </p>
+        <p>
+          Vielen Dank für eure Geduld. Für Booking- und Presseanfragen sind wir bereits erreichbar.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.youtube.com/@StingmenMusic" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a class="btn btn-secondary" href="https://facebook.com/people/Stingmen/61551892556730" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a class="btn btn-primary" href="mailto:michael.rolles@gmail.com">Kontakt per E-Mail</a>
+          <a class="btn btn-secondary" href="tel:+4915738431714">Telefon</a>
         </div>
       </div>
     </section>
 
-    <section id="news" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8"></path><path d="M8 13h8"></path></svg></span>News & Stories</h2>
-        <p>Aktuelles aus dem Bandalltag. Inhalte werden aus Markdown geladen.</p>
-      </div>
-      <div id="news-list" class="card-grid" aria-live="polite"></div>
-    </section>
-
-    <section id="tour" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg></span>Tour</h2>
-        <p>Vergangene und kommende Auftritte auf einen Blick.</p>
-      </div>
-      <div class="tour-columns">
-        <div>
-          <h3>Kommende Shows</h3>
-          <div id="tour-upcoming" class="stack" aria-live="polite"></div>
-        </div>
-        <div>
-          <h3>Vergangene Shows</h3>
-          <div id="tour-past" class="stack" aria-live="polite"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="media" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M9 10l6 3-6 3z"></path></svg></span>Media</h2>
-        <p>Fotos und Videos von Stingmen.</p>
-      </div>
-      <div class="media-layout">
-        <article>
-          <h3>Fotos</h3>
-          <div class="photo-gallery" id="photo-gallery" aria-live="polite">
-            <div class="photo-carousel-controls">
-              <button class="photo-nav" id="photo-prev" type="button" aria-label="Vorherige Fotos">&#8592;</button>
-              <div class="photo-track" id="photo-track" style="--visible-count: 3"></div>
-              <button class="photo-nav" id="photo-next" type="button" aria-label="Nächste Fotos">&#8594;</button>
-            </div>
-            <p class="hint" id="photo-range">Fotos werden geladen...</p>
-          </div>
-        </article>
-        <article>
-          <h3>Videos</h3>
-          <div class="video-card">
-            <p>Live-Sessions und Ausschnitte findest du auf unserem YouTube-Kanal.</p>
-            <a class="btn btn-primary" href="https://www.youtube.com/@StingmenMusic" target="_blank" rel="noopener noreferrer">Zum Kanal</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <div class="lightbox" id="photo-lightbox" aria-hidden="true">
-      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
-      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Fotoansicht">
-        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Schliessen">&#10005;</button>
-        <button class="lightbox-nav lightbox-nav-prev" id="lightbox-prev" type="button" aria-label="Vorheriges Bild">&#8592;</button>
-        <img id="lightbox-image" src="" alt="" />
-        <button class="lightbox-nav lightbox-nav-next" id="lightbox-next" type="button" aria-label="Nächstes Bild">&#8594;</button>
-        <p class="lightbox-counter" id="lightbox-counter">1 / 1</p>
-      </div>
-    </div>
-
-    <section id="bio" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"></circle><path d="M5 19c1.8-3.3 4.1-5 7-5s5.2 1.7 7 5"></path></svg></span>Bio</h2>
-      </div>
-      <p>
-        "Stingmen" - die ultimative Sting-Coverband für Fans von Sting und The Police!
-      </p>
-      <p>
-        "Stingmen" ist nicht nur eine Coverband, sondern eine leidenschaftliche Hommage an die zeitlosen Hits von Sting und The Police. Ihr beeindruckendes Repertoire reicht von den Klassikern der Band The Police bis zu den unverwechselbaren Solo-Werken von Sting. Ob die eingängigen Rhythmen von "Englishmen in New York" oder die unvergesslichen Klänge von "Message in a Bottle", "Stingmen" trifft den perfekten Ton, um das Publikum in eine nostalgische Atmosphäre zu versetzen.
-      </p>
-      <p>
-        Die Band präsentiert mit Professionalität und Präzision eine vielseitige Palette von Songs aus Stings erfolgreicher Solo-Karriere und zollt zugleich Tribut an die legendären Songs aus der Zeit von The Police. Sie erfasst meisterhaft die Energie und den Stil dieser Genres und bietet ein beeindruckendes Live-Erlebnis für Fans aller Generationen.
-      </p>
-      <p>
-        Die herausragende Besetzung besteht aus talentierten Musikern, die ihr Handwerk auf höchstem Niveau beherrschen. Sie umfasst einen charismatischen Sänger, einen virtuosen Bassisten, einen versierten Gitarristen, einen einfühlsamen Keyboarder, einen dynamischen Schlagzeuger und einen leidenschaftlichen Saxophonisten.
-      </p>
-      <p>
-        Gemeinsam schaffen "Stingmen" eine mitreißende Atmosphäre, die Fans von Sting und The Police gleichermaßen begeistert. Die Band lädt Sie ein, die zeitlosen Melodien zu feiern, die Generationen geprägt haben - erleben Sie die Musik, die bewegt, auf eine ganz neue Art und Weise mit "Stingmen". Freuen Sie sich auf ihre nächste Show und lassen Sie sich von "Stingmen" mitreißen!
-      </p>
-    </section>
-
-    <section id="lineup" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="7" cy="8" r="2"></circle><circle cx="17" cy="8" r="2"></circle><path d="M4 18c.8-2.4 2.2-3.7 4-3.7s3.2 1.3 4 3.7"></path><path d="M12 18c.8-2.4 2.2-3.7 4-3.7s3.2 1.3 4 3.7"></path></svg></span>Lineup</h2>
-      </div>
-      <div class="lineup-details">
-        <article class="musician">
-          <h3>Gesang: Michael Rolles</h3>
-          <p>Eigentlich sind die Keyboards sein Metier, was er mit seiner Emerson, Lake & Palmer Coverband unter Beweis stellt. Gesanglich ist er sowohl im Jazz als auch im Rock zu Hause und die Sting Songs scheinen ihm wie auf den Leib geschnitten. Er spielt Theater und singt Musicals (z.B. als Jesus in Jesus Christ Superstar).</p>
-        </article>
-        <article class="musician">
-          <h3>Bass: Michael Kehraus</h3>
-          <p>Hat an der Folkwang Hochschule Jazz Bass studiert, was man seinem Spiel unbedingt anmerken kann. Er ist ein gefragter Sessionmusiker.</p>
-        </article>
-        <article class="musician">
-          <h3>Schlagzeug: Christopher Hafer</h3>
-          <p>Ein allround Drummer par excellence. Er ist ein international gefragter Schlagzeuger, der auch als Toningenieur im Studio und live sehr erfolgreich ist.</p>
-        </article>
-        <article class="musician">
-          <h3>Keyboard: Wladimir Kopilevich</h3>
-          <p>Wowa, wie wir ihn nennen, hat eine typisch osteuropäische Klavierausbildung genossen. Er ist sowohl in der Klassik, im Jazz als auch in der Rock zu Hause. Sein intelligentes Solosspiel zaubert jedem Zuhörer eine Gänsehaut auf die Arme.</p>
-        </article>
-        <article class="musician">
-          <h3>Gitarre: Rolf Maibaum</h3>
-          <p>Ein hervorragender Gitarrist und auch Bassist. Seine permanente Fröhlichkeit reißt die Band immer aufs Neue mit. Rolf ist im Bereich Videofilm und Studiotechnik sehr bewandert und gefragt.</p>
-        </article>
-        <article class="musician">
-          <h3>Saxophon: Klaus Dapper</h3>
-          <p>In der Musikerszene kennt ihn fast jeder. Auch er war mit vielen internationalen Stars unterwegs. Wenn Peter Bursch als Gitarrenlehrer der Nation bezeichnet wird, dann trifft diese Auszeichnung im Bereich Saxophon und Klarinette auf Klaus zu. Seine Lehrbücher sind für viele Saxophonisten und Klarinettisten ein absolutes Muss.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="tech" class="section reveal">
-      <div class="section-head">
-        <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"></rect><path d="M9 8h6"></path><path d="M9 12h6"></path><path d="M9 16h4"></path></svg></span>Tech</h2>
-        <p>Infos für Veranstalter und Haustechniker.</p>
-      </div>
-      <div class="tech-panel">
-        <p>Technical Rider und stagebezogene Informationen werden hier zentral gepflegt.</p>
-        <p>
-          Der aktuelle Rider ist als PDF abrufbar. Eine mikrofontechnisch aktualisierte Fassung ist in Vorbereitung.
-        </p>
-        <a class="btn btn-secondary" href="content/Technical-Rider-2-2026.pdf" target="_blank" rel="noopener noreferrer">Technical Rider 2 (PDF)</a>
-      </div>
-    </section>
-
-    <section id="impressum" class="section reveal legal">
-      <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M4 8l8 5 8-5"></path></svg></span>Impressum</h2>
+    <section id="impressum" class="section reveal visible legal">
+      <h2 class="section-title">
+        <span class="section-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M4 8l8 5 8-5"></path></svg>
+        </span>
+        Impressum
+      </h2>
       <p>Michael Rolles</p>
       <p>Styrumer Str. 43</p>
       <p>47138 Duisburg</p>
@@ -190,140 +60,11 @@
         <a href="tel:+4915738431714">01573 8431714</a>
       </p>
     </section>
-
-    <section id="datenschutz" class="section reveal legal">
-      <h2 class="section-title"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-2.8 7.7-7 9-4.2-1.3-7-4.5-7-9V6l7-3z"></path><path d="M9.5 12.5l1.8 1.8 3.4-3.6"></path></svg></span>Datenschutz</h2>
-      <p class="intro">
-        Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erklärt, wie wir mit Ihren Daten umgehen.
-      </p>
-
-      <details class="privacy-detail">
-        <summary>1. Verantwortliche Stelle</summary>
-        <div class="detail-content">
-          <p>
-            Diese Website wird betrieben von:<br />
-            <strong>Michael Rolles</strong><br />
-            Styrumer Str. 43<br />
-            47138 Duisburg<br />
-            E-Mail: <a href="mailto:michael.rolles@gmail.com">michael.rolles@gmail.com</a><br />
-            Mobil: <a href="tel:+4915738431714">01573 8431714</a>
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>2. Hosting und Infrastruktur</summary>
-        <div class="detail-content">
-          <p>
-            Diese Website wird auf GitHub Pages gehostet. GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
-            ist Betreiber der Hosting-Infrastruktur.
-          </p>
-          <p>
-            GitHub Pages können standardmäßig Zugriffslogs erstellen, die technische Informationen enthalten (IP-Adressen, Browser-Typ, Zugriffszeitpunkte).
-            Weitere Informationen finden Sie in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>3. Datenverarbeitung auf dieser Website</summary>
-        <div class="detail-content">
-          <p>
-            <strong>Diese Website verarbeitet keine personenbezogenen Daten von Ihnen.</strong>
-          </p>
-          <ul>
-            <li>Es gibt kein Kontaktformular, das Daten erfasst</li>
-            <li>Keine Cookies oder lokale Speicherung von Nutzerdaten</li>
-            <li>Keine Tracking- oder Analysewerkzeuge (z. B. Google Analytics)</li>
-            <li>Keine Newsletter-Anmeldungen</li>
-          </ul>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>4. Externe Links und Dienste</summary>
-        <div class="detail-content">
-          <p>
-            Diese Website enthält Links zu externen Diensten. Wir sind nicht verantwortlich für deren Datenschutzrichtlinien:
-          </p>
-          <ul>
-            <li>
-              <strong>YouTube:</strong> Verweise auf YouTube erfolgen über externe Links. Besuche unterliegen der
-              <a href="https://www.youtube.com/howyoutubeworks/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">YouTube Privacy Policy</a>.
-            </li>
-            <li>
-              <strong>Facebook:</strong> Verweise auf Facebook erfolgen über externe Links. Besuche unterliegen der
-              <a href="https://www.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">Facebook Privacy Policy</a>.
-            </li>
-          </ul>
-          <p>
-            Wir betten keine Videos oder Social-Media-Inhalte direkt ein – sie sind ausschließlich über externe Links erreichbar.
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>5. Kontakt und Kommunikation</summary>
-        <div class="detail-content">
-          <p>
-            Kontaktieren Sie uns per E-Mail oder Telefon:
-          </p>
-          <ul>
-            <li>E-Mail: <a href="mailto:michael.rolles@gmail.com">michael.rolles@gmail.com</a></li>
-            <li>Telefon: <a href="tel:+4915738431714">01573 8431714</a></li>
-          </ul>
-          <p>
-            Informationen, die Sie per E-Mail oder Telefon mitteilen, werden nur zum Zweck der Kontaktaufnahme verarbeitet
-            und nicht für andere Zwecke verwendet.
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>6. Ihre Rechte</summary>
-        <div class="detail-content">
-          <p>
-            Nach der Europäischen Datenschutz-Grundverordnung (DSGVO) haben Sie folgende Rechte:
-          </p>
-          <ul>
-            <li><strong>Auskunftsrecht:</strong> Sie können jederzeit erfragen, welche Daten wir über Sie speichern</li>
-            <li><strong>Berichtigungsrecht:</strong> Sie können fehlerhafte Daten korrigieren lassen</li>
-            <li><strong>Löschungsrecht:</strong> Sie können die Löschung Ihrer Daten verlangen (soweit keine rechtlichen Gründe dagegensprechen)</li>
-            <li><strong>Recht auf Datenportabilität:</strong> Sie können Ihre Daten in einem strukturierten Format erhalten</li>
-          </ul>
-          <p>
-            Richten Sie Anfragen hierzu bitte an: <a href="mailto:michael.rolles@gmail.com">michael.rolles@gmail.com</a>
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>7. Sicherheit</summary>
-        <div class="detail-content">
-          <p>
-            Diese Website wird über eine sichere HTTPS-Verbindung übertragen. GitHub Pages verschlüsselt die Übertragung
-            automatisch, um Ihre Sicherheit zu gewährleisten.
-          </p>
-        </div>
-      </details>
-
-      <details class="privacy-detail">
-        <summary>8. Änderungen dieser Datenschutzerklärung</summary>
-        <div class="detail-content">
-          <p>
-            Wir behalten uns vor, diese Datenschutzerklärung jederzeit anzupassen. Die aktuelle Version ist auf dieser Website abrufbar.
-            Letzte Aktualisierung: Juni 2026.
-          </p>
-        </div>
-      </details>
-    </section>
   </main>
 
   <footer class="site-footer">
     <p>Stingmen - Tribute to Sting & The Police</p>
-    <a href="#home">Nach oben</a>
+    <a href="#status">Nach oben</a>
   </footer>
-
-  <script src="app.js" defer></script>
 </body>
 </html>
